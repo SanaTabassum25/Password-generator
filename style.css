@@ -130,8 +130,52 @@ button[type="submit"]:hover {
 }
 @media screen and (min-width: 576px) {
   /* Styles for small devices and above */
+  .pwdgenerator {
+    width: 90%;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  label,
+  .password-wrap {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .password-wrap:after {
+    top: 50%;
+    left: 100%;
+    height: 100%;
+    width: 3px;
+    transform: translateY(-50%);
+  }
+
+  .password-wrap input {
+    font-size: 1rem;
+  }
+
+  label span {
+    flex: none;
+    margin-right: 1rem;
+  }
+
+  label input[type="number"] {
+    width: 4rem;
+  }
+
   button[type="submit"] {
     width: auto;
-    margin-left: 0;
+    margin-left: 1rem;
+    padding: 0.75rem 1.5rem;
   }
 }
+
+
+
+
+
+
+
